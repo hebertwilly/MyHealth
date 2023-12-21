@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Averia+Libre&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../CSS/header.css">
+        <link rel="stylesheet" href="../CSS/recuperarSenha.css">
+        <link rel="stylesheet" href="../CSS/editarVacina.css">
+        <link rel="icon" type="image/png" href="../Img/icon-vaccine.png">
+        <title>Recuperar senha</title>
+    </head>
+    <body>
+        <header class="headerContent">
+            <nav class="navHeader flexbox"><!--a class flexbox ta no arquivo header.css-->
+                <div class="logoContent flexbox">
+                    <img src="../Img/icon-vaccine.png" alt="Icone Seringa, vacina">
+                    <h1>MyHealth</h1>
+                </div>
+            </nav>
+        </header>
+        
+        <form action="" method="" class="formRecuperarSenha">
+            <div class="containerForm">
+                <label for="email" class="labelEmail">E-mail</label>
+                <input type="email" id="email" name="email" class="inputEmail">
+            </div>
+            <button type="button" class="buttonRecuperar" id="buttonRecuperar">Redefinir Senha</button>
+        </form>
+
+        <div class="containerModal" id="modal">
+            <div class="modalDelete">
+                <span class="textModal" id="text1">UM E-MAIL DE REEFINIÇÃO DE SENHA FOI ENVIADO !!</span>
+                <span class="textModal" id="text2">Você será redirecionado para Login</span>
+            </div>
+        </div>
+        
+        <script type="module" src="../JavaScript/recuperarSenha.js"></script>
+    </body>
+</html>

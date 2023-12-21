@@ -1,0 +1,79 @@
+
+/*STYLE PADRÃO PARA TODOS OS HEADERS*/
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Averia Libre', cursive;
+}
+
+button{
+    font-family: 'Averia Libre', cursive;
+}
+
+.flexbox{ /*adiciona o display flex nos elementos para utilizar flexbox*/
+    display: flex;
+}
+
+.headerContent{ /*Organza o conteiner pai do header, altera cor e tamanho do elemento*/
+    width: 100%;
+    height: 87px;
+    background-color: #8FE1D9;
+}
+
+.navHeader{/*Organza o container filho do header, este é o container nav que contem buttons e logo*/
+   height: 100%;
+   justify-content:space-between;
+   align-items: center;
+   margin: 0 18px;
+}
+
+.logoContent{/*Container responsavel pela logo do site (icone e h1)*/
+    height: 100%;
+    align-items: center;
+}
+.logoContent img{/*Altera o tamanho do icone da logo*/
+    width: 51px;
+    height: 51px;
+}
+
+.logoContent h1{/*altera tamanho e cor do h1 da logo e também a margem entre h1 e icone*/
+    margin-left: 16px;
+    font-size: 40px;
+    color: #419ED7;
+}
+
+.buttonsHeader{/*faz as principais alterações nos botões do header, que são padrão para todos*/
+    background-color: #419ED7;
+    border: 1px solid #419ED7;
+    width: 198px;
+    height: 50px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 4px 5px rgba(44, 43, 43, 0.4);
+    transition: transform 0.4s ease-out;
+}
+
+.buttonsHeader:hover{
+    transform: scale(0.9);
+}
+
+/*STYLES EXCLUSIVOS PARA A TELA HOME*/
+.divButtons{/*Organiza a div dos elementos buttons*/
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#buttonVacinas, #buttonLogout{
+    font-size: 22px; /*Altera apenas o tamanho da fonte dos botões do header da home*/
+}
+
+.buttonLogof{/*Altera exclusivamente o botão logof, aplicando os tamanhos especificos e a margem*/
+    width: 114px;
+    height: 50px;
+    margin-left: 10px;
+}
+
+
+

@@ -1,0 +1,131 @@
+body{
+    background-color: #ADD4D0;
+}
+
+button{
+    font-family: 'Averia Libre', cursive;
+    cursor: pointer;
+}
+h1, p, span{
+    margin: 0;
+}
+
+.searchContent{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+.searchContent input{
+    width: 90%;
+    height: 100%;
+    border-radius: 5px;
+    color: #3F92C5;
+    border: none;
+    background-color: white; 
+    font-family: 'Averia Libre', cursive;
+    font-size: 22px;
+    margin-left: 20px;
+    padding-left: 12px;
+}
+
+.searchContent input:focus{
+    outline: none;
+}
+
+.searchContent img{
+    width: 35px;
+    height: 38px;
+}
+
+.mainHome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+  
+
+.sessaoCards{
+    display: flex;
+    justify-content: flex-start;
+    width: 90%;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+
+.cardsVacinas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 330px;
+    height: 321px;
+    border-radius: 10px;
+    background-color: white;
+    margin-left: 66px;
+    margin-bottom: 45px;
+    cursor: pointer;
+    box-shadow: 7px 7px 5px rgba(44, 43, 43, 0.4);
+    transition: transform 0.5s ease-out;
+}
+
+.cardsVacinas:hover{
+    transform: scale(1.1);
+}
+
+.nameVacina{
+  color:  #3F92C5;
+  margin-top: 15px;
+  margin-bottom: 11px;
+  font-size: 36px;
+}
+
+.numberDose{
+    background-color: #3F92C5;
+    color: white;
+    width: 92px;
+    height: 20px;
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.dateDose{
+    color: #8B8B8B;
+    margin-bottom: 11px;
+    font-size: 16px;
+}
+
+.comprovanteImg{
+    border-radius: 10px;
+    margin-bottom: 23px;
+}
+
+.proxDose{
+    align-self: flex-end;
+    padding-right: 15px;
+    color: #FD7979;
+}
+
+.buttonNovaVacina{
+    align-self: center;
+    margin-top: auto;
+    margin-bottom: 30px;
+    width: 188px;
+    height: 50px;
+    border: 1px solid #37BD6D;
+    background-color: #49B976;
+    color: white;
+    font-size: 24px;
+    box-shadow: 0px 4px 5px rgba(44, 43, 43, 0.4);
+    transition: transform 0.5s ease-out;
+}
+
+.buttonNovaVacina:hover{
+    transform: scale(1.1);
+}

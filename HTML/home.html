@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Averia+Libre&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../CSS/header.css">
+        <link rel="stylesheet" href="../CSS/home.css">
+        <link rel="icon" type="image/png" href="../Img/icon-vaccine.png">
+        <title>Home-MyHealth</title>
+    </head>
+    <body>
+        <header class="headerContent">
+            <nav class="navHeader flexbox">
+                <div class="logoContent flexbox">
+                    <img src="../Img/icon-vaccine.png" alt="Icone Seringa, vacina">
+                    <h1>MyHealth</h1>
+                </div>
+                <div class="flexbox divButtons">
+                    <button id="buttonVacinas" class="buttonsHeader" type="button">Minhas vacinas</button>
+                    <button id="buttonLogout" class="buttonsHeader buttonLogof" type="button">Logout</button>
+                </div>
+            </nav>
+        </header>
+
+        <div class="searchContent">
+            <img src="../Img/icon.svg" alt="Lupa icone, pesquisar icone">
+            <input id="inputSearch" class="inputPesquisar" type="text" placeholder="PESQUISAR VACINA">
+        </div>
+
+        <main class="mainHome">
+            <div id="sectionCards" class="sessaoCards"> 
+                <!---MODELO DO CARD GERADO DINAMICAMENTE
+                <div class="cardsVacinas">
+                <h1 class="nameVacina" id="nomeVacina">BCG</h1>
+                <p class="numberDose" id="numDose">Dose Única</p>
+                <p class="dateDose" id="dataDose">11/06/2022</p>
+                <img class="comprovanteImg" id="comprovante" src="../Img/image-comprovante.png" alt="">
+                <span class="proxDose" id="nextDose">Não há próxima dose</span>
+                </div>-->
+            </div>
+            <button id="buttonNewVacina" class="buttonNovaVacina">Nova Vacina</button>
+        </main>
+        <script type="module" src="../JavaScript/home.js"></script>
+    </body>
+</html>

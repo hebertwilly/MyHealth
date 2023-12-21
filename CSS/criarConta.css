@@ -1,0 +1,86 @@
+body{
+   font-family: 'Averia Libre', cursive;
+   background-color: #ADD4D0;
+}
+
+label, input{
+    display: block;
+}
+.formConta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+.containerForms{
+    justify-content: center;
+}
+
+.contentLabels{
+    display: flex;
+    flex-direction: column;
+    font-size: 36px;
+    color: white;
+    margin-right: 15px;
+}
+
+.contentLabels label{
+    margin-bottom: 32px;
+    align-self: flex-end;
+}
+
+.inputName, .inputNascimento, .inputEmail, 
+.inputSenha, .inputRepetirSenha{
+   color: #3F92C5;
+   border: none;
+   background-color: white;
+   height: 46px;
+   width: 550px;
+   font-size: 30px;
+   font-family: 'Averia Libre', cursive;
+   margin-bottom: 30px;
+   padding-left: 15px;
+}
+
+.sexoInputs{
+    font-size: 30px;
+}
+
+.inputMasculino, .inputFeminino{
+    width: 35px;
+    height: 35px;
+    margin-left: 15px;
+    margin-bottom: 29px;
+}
+
+.labelMasculino, .labelFeminino{
+    margin-left: 10px;
+    color: white;
+}
+
+.buttonCadastrar{
+    cursor: pointer;
+    align-self: center;
+    border: 1px solid #37BD6D;
+    background-color: #49B976;
+    width: 188px;
+    height: 50px;
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 24px;
+    box-shadow: 0px 4px 5px rgba(44, 43, 43, 0.4);
+    transition: transform 0.5s ease-out;
+}
+
+.buttonCadastrar:hover{
+    transform: scale(1.1);
+}
+
+.aviso{
+    display: none;
+    color: #FD7979;
+    font-family: 'Averia Libre', cursive;
+    font-size: 24px;
+    align-self: center;
+}

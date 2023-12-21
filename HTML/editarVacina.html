@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Averia+Libre&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../CSS/header.css">
+        <link rel="stylesheet" href="../CSS/editarVacina.css">
+        <link rel="icon" type="image/png" href="../Img/icon-vaccine.png">
+        <title>Editar Vacina</title>
+</head>
+<body>
+    <header class="headerContent">
+        <nav class="navHeader flexbox">
+            <div class="logoContent flexbox">
+                <img src="../Img/icon-vaccine.png" alt="Icone Seringa, vacina">
+                <h1>MyHealth</h1>
+            </div>
+            <div class="flexbox divButtons">
+                <button id="buttonVacinas" class="buttonsHeader" type="button">Minhas vacinas</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="mainNovaVacina">
+        <form action="" method="" class="formNovaVacina">
+            <button type="button" class="buttonDelete" id="buttonDelete">Excluir</button>
+            <div class="containerForm">
+                <div class="labels">
+                    <label for="dataVacina" class="labelDataVacina">Data de vacinação</label>
+                    <label for="vacina" class="labelVacina">Vacina</label>
+                    <label for="dose" class="labelDose">Dose</label>
+                    <label for="comprovante" class="labelComprovante">Comprovante da vacina</label>
+                    <label for="proxDose" class="labelProxDose">Próxima vacinação</label>
+                </div>
+                <div class="inputs">
+                    <input type="date" id="dataVacina" name="dataVacina" class="inputDataVacina">
+                    <input type="text" name="vacina" id="vacina" class="inputVacina">
+                    <div class="inputsDose">
+                        <input type="radio" value="1a. dose" name="dose" id="dose1" class="input1Dose">
+                        <label for="dose1" class="label1Dose">1a dose</label>
+                        <input type="radio" value="2a. dose" name="dose" id="dose2" class="input2Dose">
+                        <label for="dose2" class="label2Dose">2a dose</label>
+                        <input type="radio" value="3a. dose" name="dose" id="dose3" class="input3Dose">
+                        <label for="dose3" class="label1Dose">3a dose</label>
+                        <input type="radio"  value="Reforco" name="dose" id="reforco" class="inputReforco">
+                        <label for="reforco" class="labelReforco">Reforço</label>
+                        <input type="radio" value="Dose unica" name="dose" id="doseUnica" class="inputDoseUnica">
+                        <label for="doseUnica" class="labelDoseUnica">Dose unica</label>
+                    </div>
+                    <button type="button" class="buttonSelecionarImg">Selecionar imagem...</button>
+                    <div class="containerComprovante">
+                        <img src="../Img/image-comprovante.png" alt="Comprovante de vacinação">
+                    </div>
+                    <input type="date" id="proxDose" name="proxDose" class="inputProxDose">
+                </div>
+            </div>
+            <button type="button" id="buttonSalvar" class="buttonSalvar">Salvar</button>
+        </form>
+    </main>
+    <div class="containerModal" id="modal">
+        <div class="modalDelete">
+            <span class="textModal">Tem certeza que deseja remover essa vacina?</span>
+            <div class="buttonsContainer">
+                <button type="button" id="buttonSim" class="buttonSim">SIM</button>
+                <button type="button" id="buttonCancelar" class="buttonCancelar">CANCELAR</button>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="../JavaScript/editarVacinas.js"></script>
+</body>
+</html>

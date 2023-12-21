@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Averia+Libre&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../CSS/header.css">
+        <link rel="stylesheet" href="../CSS/criarConta.css">
+        <link rel="stylesheet" href="../CSS/editarVacina.css">
+        <link rel="icon" type="image/png" href="../Img/icon-vaccine.png">
+        <title>Criar Conta</title>
+    </head>
+    <body>
+        <header class="headerContent">
+            <nav class="navHeader flexbox"><!--a class flexbox ta no arquivo header.css-->
+                <div class="logoContent flexbox">
+                    <img src="../Img/icon-vaccine.png" alt="Icone Seringa, vacina">
+                    <h1>MyHealth</h1>
+                </div>
+                <button id="buttonLogin" class="buttonsHeader" type="button">Já tenho conta</button>
+            </nav>
+        </header>
+
+        <form action="" method="" class="formConta" id="formConta">
+            <div class="containerForms flexbox"><!--a class flexbox ta no arquivo header.css-->
+                <div class="contentLabels">
+                    <label for="name" class="labelNome">Nome completo</label>
+                    <label class="labelSexo">Sexo</label>
+                    <label for="nascimento" class="labelNascimento">Data Nascimento</label>
+                    <label for="email" class="labelEmail">Email</label>
+                    <label for="senha" class="labelSenha">Senha</label>
+                    <label for="repetirSenha" class="labelRepetirSenha">Repetir senha</label>
+                </div>
+                <div class="contentInputs">
+                    <input type="text" id="name" name="name" class="inputName">
+                    <div class="sexoInputs flexbox">
+                        <input value="Masculino" type="radio" name="sexo" id="masculino" name="masculino" class="inputMasculino">
+                        <label for="masculino" class="labelMasculino">Masculino</label>
+                        <input value="Feminino" type="radio" name="sexo" id="feminino" class="inputFeminino">
+                        <label for="feminino" class="labelFeminino">Feminino</label>
+                    </div>
+                    <input type="date" id="nascimento" name="nascimento" class="inputNascimento">
+                    <input type="email" id="email" name="email" class="inputEmail">
+                    <input type="password" id="senha" name="senha" class="inputSenha">
+                    <input type="password" id="repetirSenha" name="repetirSenha" class="inputRepetirSenha">
+                </div>
+            </div>
+            <span class="aviso">Senha não confere!</span>
+            <button type="button" class="buttonCadastrar" id="buttonCadastrar">cadastrar</button>
+        </form>
+
+        <div class="containerModal" id="modal">
+            <div class="modalDelete">
+                <span class="textModal">USUÁRIO CADASTRADO COM SUCESSO !!</span>
+                <span class="textModal">Você será redirecionado para Login</span>
+            </div>
+        </div>
+
+        <script type="module" src="../JavaScript/criarConta.js"></script>
+        <script type="module" src="../JavaScript/vigilant.js"></script>
+    </body>
+</html>

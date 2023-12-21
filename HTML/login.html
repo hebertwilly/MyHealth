@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Averia+Libre&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../CSS/header.css">
+        <link rel="stylesheet" href="../CSS/login.css">
+        <link rel="icon" type="image/png" href="../Img/icon-vaccine.png">
+        <title>Login</title>
+    </head>
+    <body>
+        <header class="headerContent">
+            <nav class="navHeader flexbox"><!--a class flexbox ta no arquivo header.css-->
+                <div class="logoContent flexbox">
+                    <img src="../Img/icon-vaccine.png" alt="Icone Seringa, vacina">
+                    <h1>MyHealth</h1>
+                </div>
+                <button id="buttonCriarConta" class="buttonsHeader" type="button">Criar conta</button>
+            </nav>
+        </header>
+        <main class="mainLogin">
+            <form action="" method="" class="formConta">
+                <div class="containerForm">
+                    <div class="contentLabels">
+                        <label for="email" class="labelEmail">E-mail</label>
+                        <label for="senha" class="labelSenha">Senha</label>
+                    </div>
+                    <div class="contentInputs">
+                        <input type="email" id="email" name="email" class="inputEmail">
+                        <input type="password" id="senha" name="senha" class="inputSenha">
+                    </div>
+                </div>
+                <button type="button" class="buttonEntrar" id="buttonEntrar">Entrar</button>
+            </form>
+            <button type="button" class="buttonEsqueciSenha" id="buttonEsqueciSenha">Esqueci minha senha</button>
+        </main>
+        <script type="module" src="../JavaScript/login.js"></script>
+    </body>
+</html>
